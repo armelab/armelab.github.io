@@ -22,7 +22,7 @@ Additionally, the lab includes one Kali Linux VM functioning as an attacker mach
 * For Kali Linux VM, it can be downloaded as VirtualBox VM [here](https://www.kali.org/get-kali/#kali-virtual-machines).
 
 
-## Set up Windows 10 client VMs
+## Setting up Windows 10 client VMs
 
 1. Open up VirtualBox.
 
@@ -82,7 +82,7 @@ Additionally, the lab includes one Kali Linux VM functioning as an attacker mach
 
 16. Repeat step 1-15 to create and set up another Windows 10 client VM. Name the VM and hostname to LAB-Client02 on the second client VM.
 
-## Set up Windows Server VM
+## Setting up Windows Server VM
 
 1. Create a VM in VirtualBox, name the VM to LAB-ServerDC, select ISO image file to the Windows Server ISO file. Be sure to check Skip Unattended Installation.
 Configure hardware to 2 CPUs and 4GB memory. Leave Hard Disk settings default, and click Finish.
@@ -111,7 +111,7 @@ Configure hardware to 2 CPUs and 4GB memory. Leave Hard Disk settings default, a
 
 9. (Optional) Install VirtualBox Guest Additions.
 
-## Install Sysmon on all Windows VMs
+## Installing Sysmon on all Windows VMs
 
 1. Run PowerShell as administrator on one of the Windows VMs.
 
@@ -151,7 +151,7 @@ Configure hardware to 2 CPUs and 4GB memory. Leave Hard Disk settings default, a
 
 4. Connect all VMs to the AD-Lab NAT Network.
 
-## Install Active Directory Domain Service (AD DS) on the Windows Server VM
+## Installing Active Directory Domain Service (AD DS) on the Windows Server VM
 
 1. In Windows Server VM, open Server Manager.
 
@@ -179,7 +179,7 @@ Configure hardware to 2 CPUs and 4GB memory. Leave Hard Disk settings default, a
 
     ![screenshot](/assets/img/screenshots/ad38.PNG)
 
-## Promote the Windows Server VM to a Domain Controller
+## Promoting the Windows Server VM to a Domain Controller
 
 1. After finish installing AD DS, in Server Manager, click the flag icon, and click Promote the server to a domain controller.
 
@@ -201,7 +201,7 @@ Configure hardware to 2 CPUs and 4GB memory. Leave Hard Disk settings default, a
 
     ![screenshot](/assets/img/screenshots/ad44.PNG)
 
-## Create AD domain users
+## Creating AD domain users
 
 1. In Windows Server VM, open Active Directory Users and Computers.
 
@@ -221,7 +221,7 @@ Configure hardware to 2 CPUs and 4GB memory. Leave Hard Disk settings default, a
 
 8. Repeat the steps to create another domain user.
 
-## Join client VMs to the domain
+## Joining client VMs to the domain
 
 1. On Windows 10 client VM, configure DNS server address to the IP address of the domain controller.
 
