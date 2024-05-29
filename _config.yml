@@ -16,7 +16,7 @@ timezone: America/Chicago
 
 title: Armelab # the main title
 
-tagline: A blog site about my cybersecurity home lab | created by Jirapat Kuengwong # it will display as the sub-title
+tagline: A blog site used to showcase and document my cybersecurity home lab works | created by Jirapat Kuengwong # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A blog site about my cybersecurity home lab
@@ -85,7 +85,7 @@ pageviews:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark
+theme_mode: 
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
