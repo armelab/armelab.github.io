@@ -157,6 +157,22 @@ Once the rules are created, select droplet to apply firewall rules. Only traffic
 
 9. Back to Wazuh Dashboard. The number of total agents should be 3. If those Windows VM are still up and running, the number of avtive agents will also be 3. That means the Wazuh agents are checking in with the Wazuh server, forwarding telemetry.
 
+## Configure Wazuh Agent to forward Sysmon log
+
+1. Open ```ossec.conf``` file with Notepad. The file is located in ```C:\Program Files (x86)\ossec-agent\``` folder. Accessing the folder requires administrator credentials.
+
+2. Scroll down to Log Analysis block of the configuration file. Add the following into the Log Analysis block, then save the file.
+
+    ```
+    <localfile>
+       <location>Microsoft-Windows-Sysmon/Operational</location>
+       <log_format>eventchannel</log_format>
+    </localfile>
+    ```
+
+3. Restart Wazuh service.
+
+
 ## Wrapping up
 
 In this post, Wazuh SIEM server has been deployed on a cloud VM, and Wazuh agents are also deployed on Windows VMs.
